@@ -16,7 +16,7 @@ namespace BestVOIP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Forms.BestVOIP_Home_Form());
         }
     }
 }

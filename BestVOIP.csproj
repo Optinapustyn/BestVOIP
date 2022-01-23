@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Database.cs" />
     <Compile Include="Forms\BestVOIP_Home_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +58,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User_Controls\BestVOIP_Contatto_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_Controls\BestVOIP_Contatto_UserControl.Designer.cs">
+      <DependentUpon>BestVOIP_Contatto_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Controls\BestVOIP_Impostazioni_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_Controls\BestVOIP_Impostazioni_UserControl.Designer.cs">
+      <DependentUpon>BestVOIP_Impostazioni_UserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Controls\BestVOIP_Telefonata_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User_Controls\BestVOIP_Telefonata_UserControl.Designer.cs">
+      <DependentUpon>BestVOIP_Telefonata_UserControl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\BestVOIP_Home_Form.resx">
       <DependentUpon>BestVOIP_Home_Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -68,7 +87,17 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="User_Controls\BestVOIP_Contatto_UserControl.resx">
+      <DependentUpon>BestVOIP_Contatto_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Controls\BestVOIP_Impostazioni_UserControl.resx">
+      <DependentUpon>BestVOIP_Impostazioni_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Controls\BestVOIP_Telefonata_UserControl.resx">
+      <DependentUpon>BestVOIP_Telefonata_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -84,10 +113,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BestVOIP_Icon.ico" />
+    <None Include="Resources\BestVOIP_MinimizeIcon.png" />
+    <None Include="Resources\BestVOIP_ExitIcon.png" />
+    <None Include="Resources\BestVOIP_Settings.png" />
+    <None Include="Resources\BestVOIP_Save.png" />
+    <None Include="Resources\BestVOIP_PhoneIcon.png" />
+    <None Include="Resources\BestVOIP_MainLogo.png" />
+    <None Include="Resources\BestVOIP_DoIcon.png" />
+    <None Include="Resources\BestVOIP_ContactIcon.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\" />
-    <Folder Include="User_Controls\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

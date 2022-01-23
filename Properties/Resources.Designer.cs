@@ -83,9 +83,29 @@ namespace BestVOIP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BestVOIP_ExitIcon {
+            get {
+                object obj = ResourceManager.GetObject("BestVOIP_ExitIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BestVOIP_MainLogo {
             get {
                 object obj = ResourceManager.GetObject("BestVOIP_MainLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BestVOIP_MinimizeIcon {
+            get {
+                object obj = ResourceManager.GetObject("BestVOIP_MinimizeIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

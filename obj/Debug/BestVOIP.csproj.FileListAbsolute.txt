@@ -1,0 +1,13 @@
+C:\Users\u\source\repos\BestVOIP\obj\Debug\BestVOIP.Forms.BestVOIP_Home_Form.resources
+C:\Users\u\source\repos\BestVOIP\obj\Debug\BestVOIP.Properties.Resources.resources
+C:\Users\u\source\repos\BestVOIP\obj\Debug\BestVOIP.User_Controls.BestVOIP_Impostazioni_UserControl.resources
+C:\Users\u\source\repos\BestVOIP\obj\Debug\BestVOIP.User_Controls.BestVOIP_Telefonata_UserControl.resources
+C:\Users\u\source\repos\BestVOIP\obj\Debug\BestVOIP.csproj.GenerateResource.cache
+C:\Users\u\source\repos\BestVOIP\obj\Debug\BestVOIP.csproj.CoreCompileInputs.cache
+C:\Users\u\source\repos\BestVOIP\bin\Debug\BestVOIP.exe.config
+C:\Users\u\source\repos\BestVOIP\bin\Debug\BestVOIP.exe
+C:\Users\u\source\repos\BestVOIP\bin\Debug\BestVOIP.pdb
+C:\Users\u\source\repos\BestVOIP\obj\Debug\BestVOIP.exe
+C:\Users\u\source\repos\BestVOIP\obj\Debug\BestVOIP.pdb
+C:\Users\u\source\repos\BestVOIP\obj\Debug\BestVOIP.csproj.AssemblyReference.cache
+C:\Users\u\source\repos\BestVOIP\obj\Debug\BestVOIP.User_Controls.BestVOIP_Contatto_UserControl.resources
