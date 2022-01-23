@@ -57,5 +57,15 @@ namespace BestVOIP.Forms
             // Sets The UserControl To View
             mainUserControl.BringToFront();
         }
+
+        private void Exit_Button_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Minimize_Button_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }
