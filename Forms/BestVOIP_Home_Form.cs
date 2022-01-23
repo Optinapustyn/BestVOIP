@@ -24,7 +24,7 @@ namespace BestVOIP.Forms
 
         private void Contatto_Button_Click(object sender, EventArgs e)
         {
-            ButtonUI(Contatto_Button, Telefonata_Button, Impostazioni_Button, Navigation_Panel, bestVOIP_Telefonata_UserControl1);
+            ButtonUI(Contatto_Button, Telefonata_Button, Impostazioni_Button, Navigation_Panel, bestVOIP_Contatto_UserControl1);
         }
 
         private void Impostazioni_Button_Click(object sender, EventArgs e)

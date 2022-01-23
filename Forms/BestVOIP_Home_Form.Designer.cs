@@ -32,32 +32,33 @@ namespace BestVOIP.Forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BestVOIP_Home_Form));
             this.LeftMain_Panel = new System.Windows.Forms.Panel();
             this.Navigation_Panel = new System.Windows.Forms.Panel();
+            this.Impostazioni_Button = new System.Windows.Forms.Button();
+            this.Contatto_Button = new System.Windows.Forms.Button();
+            this.Telefonata_Button = new System.Windows.Forms.Button();
             this.Logo_Panel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.UserControl_Panel = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.Minimize_Button = new System.Windows.Forms.PictureBox();
-            this.Exit_Button = new System.Windows.Forms.PictureBox();
-            this.Impostazioni_Button = new System.Windows.Forms.Button();
-            this.Contatto_Button = new System.Windows.Forms.Button();
-            this.Telefonata_Button = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.UserControlPlacerholder_Panel = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.Minimize_Button = new System.Windows.Forms.PictureBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.Exit_Button = new System.Windows.Forms.PictureBox();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.bestVOIP_Telefonata_UserControl1 = new BestVOIP.User_Controls.BestVOIP_Telefonata_UserControl();
+            this.bestVOIP_Contatto_UserControl1 = new BestVOIP.User_Controls.BestVOIP_Contatto_UserControl();
             this.bestVOIP_Impostazioni_UserControl1 = new BestVOIP.User_Controls.BestVOIP_Impostazioni_UserControl();
             this.LeftMain_Panel.SuspendLayout();
             this.Logo_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.UserControl_Panel.SuspendLayout();
+            this.UserControlPlacerholder_Panel.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Minimize_Button)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Exit_Button)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.UserControlPlacerholder_Panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // LeftMain_Panel
@@ -82,115 +83,6 @@ namespace BestVOIP.Forms
             this.Navigation_Panel.Name = "Navigation_Panel";
             this.Navigation_Panel.Size = new System.Drawing.Size(2, 45);
             this.Navigation_Panel.TabIndex = 0;
-            // 
-            // Logo_Panel
-            // 
-            this.Logo_Panel.Controls.Add(this.pictureBox1);
-            this.Logo_Panel.Controls.Add(this.panel4);
-            this.Logo_Panel.Controls.Add(this.panel3);
-            this.Logo_Panel.Controls.Add(this.panel2);
-            this.Logo_Panel.Controls.Add(this.panel1);
-            this.Logo_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Logo_Panel.Location = new System.Drawing.Point(0, 0);
-            this.Logo_Panel.Name = "Logo_Panel";
-            this.Logo_Panel.Size = new System.Drawing.Size(178, 83);
-            this.Logo_Panel.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(0, 10);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(10, 63);
-            this.panel4.TabIndex = 3;
-            // 
-            // panel3
-            // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(168, 10);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(10, 63);
-            this.panel3.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 73);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(178, 10);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(178, 10);
-            this.panel1.TabIndex = 0;
-            // 
-            // UserControl_Panel
-            // 
-            this.UserControl_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.UserControl_Panel.Controls.Add(this.UserControlPlacerholder_Panel);
-            this.UserControl_Panel.Controls.Add(this.panel5);
-            this.UserControl_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UserControl_Panel.Location = new System.Drawing.Point(178, 0);
-            this.UserControl_Panel.Name = "UserControl_Panel";
-            this.UserControl_Panel.Size = new System.Drawing.Size(447, 625);
-            this.UserControl_Panel.TabIndex = 1;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.Minimize_Button);
-            this.panel5.Controls.Add(this.panel7);
-            this.panel5.Controls.Add(this.Exit_Button);
-            this.panel5.Controls.Add(this.panel6);
-            this.panel5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(447, 30);
-            this.panel5.TabIndex = 0;
-            // 
-            // panel6
-            // 
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(437, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(10, 30);
-            this.panel6.TabIndex = 0;
-            // 
-            // panel7
-            // 
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel7.Location = new System.Drawing.Point(397, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(10, 30);
-            this.panel7.TabIndex = 2;
-            // 
-            // Minimize_Button
-            // 
-            this.Minimize_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Minimize_Button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Minimize_Button.Image = global::BestVOIP.Properties.Resources.BestVOIP_MinimizeIcon;
-            this.Minimize_Button.Location = new System.Drawing.Point(367, 0);
-            this.Minimize_Button.Name = "Minimize_Button";
-            this.Minimize_Button.Size = new System.Drawing.Size(30, 30);
-            this.Minimize_Button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.Minimize_Button.TabIndex = 3;
-            this.Minimize_Button.TabStop = false;
-            // 
-            // Exit_Button
-            // 
-            this.Exit_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Exit_Button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Exit_Button.Image = global::BestVOIP.Properties.Resources.BestVOIP_ExitIcon;
-            this.Exit_Button.Location = new System.Drawing.Point(407, 0);
-            this.Exit_Button.Name = "Exit_Button";
-            this.Exit_Button.Size = new System.Drawing.Size(30, 30);
-            this.Exit_Button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.Exit_Button.TabIndex = 1;
-            this.Exit_Button.TabStop = false;
             // 
             // Impostazioni_Button
             // 
@@ -264,6 +156,19 @@ namespace BestVOIP.Forms
             this.Telefonata_Button.UseVisualStyleBackColor = false;
             this.Telefonata_Button.Click += new System.EventHandler(this.Telefonata_Button_Click);
             // 
+            // Logo_Panel
+            // 
+            this.Logo_Panel.Controls.Add(this.pictureBox1);
+            this.Logo_Panel.Controls.Add(this.panel4);
+            this.Logo_Panel.Controls.Add(this.panel3);
+            this.Logo_Panel.Controls.Add(this.panel2);
+            this.Logo_Panel.Controls.Add(this.panel1);
+            this.Logo_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Logo_Panel.Location = new System.Drawing.Point(0, 0);
+            this.Logo_Panel.Name = "Logo_Panel";
+            this.Logo_Panel.Size = new System.Drawing.Size(178, 83);
+            this.Logo_Panel.TabIndex = 0;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -275,9 +180,53 @@ namespace BestVOIP.Forms
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // panel4
+            // 
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(0, 10);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(10, 63);
+            this.panel4.TabIndex = 3;
+            // 
+            // panel3
+            // 
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(168, 10);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(10, 63);
+            this.panel3.TabIndex = 2;
+            // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 73);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(178, 10);
+            this.panel2.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(178, 10);
+            this.panel1.TabIndex = 0;
+            // 
+            // UserControl_Panel
+            // 
+            this.UserControl_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.UserControl_Panel.Controls.Add(this.UserControlPlacerholder_Panel);
+            this.UserControl_Panel.Controls.Add(this.panel5);
+            this.UserControl_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UserControl_Panel.Location = new System.Drawing.Point(178, 0);
+            this.UserControl_Panel.Name = "UserControl_Panel";
+            this.UserControl_Panel.Size = new System.Drawing.Size(447, 625);
+            this.UserControl_Panel.TabIndex = 1;
+            // 
             // UserControlPlacerholder_Panel
             // 
             this.UserControlPlacerholder_Panel.Controls.Add(this.bestVOIP_Telefonata_UserControl1);
+            this.UserControlPlacerholder_Panel.Controls.Add(this.bestVOIP_Contatto_UserControl1);
             this.UserControlPlacerholder_Panel.Controls.Add(this.bestVOIP_Impostazioni_UserControl1);
             this.UserControlPlacerholder_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.UserControlPlacerholder_Panel.Location = new System.Drawing.Point(0, 30);
@@ -285,16 +234,79 @@ namespace BestVOIP.Forms
             this.UserControlPlacerholder_Panel.Size = new System.Drawing.Size(447, 595);
             this.UserControlPlacerholder_Panel.TabIndex = 1;
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.Minimize_Button);
+            this.panel5.Controls.Add(this.panel7);
+            this.panel5.Controls.Add(this.Exit_Button);
+            this.panel5.Controls.Add(this.panel6);
+            this.panel5.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(447, 30);
+            this.panel5.TabIndex = 0;
+            // 
+            // Minimize_Button
+            // 
+            this.Minimize_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Minimize_Button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Minimize_Button.Image = global::BestVOIP.Properties.Resources.BestVOIP_MinimizeIcon;
+            this.Minimize_Button.Location = new System.Drawing.Point(377, 0);
+            this.Minimize_Button.Name = "Minimize_Button";
+            this.Minimize_Button.Size = new System.Drawing.Size(30, 30);
+            this.Minimize_Button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Minimize_Button.TabIndex = 3;
+            this.Minimize_Button.TabStop = false;
+            // 
+            // panel7
+            // 
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel7.Location = new System.Drawing.Point(407, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(5, 30);
+            this.panel7.TabIndex = 2;
+            // 
+            // Exit_Button
+            // 
+            this.Exit_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Exit_Button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Exit_Button.Image = global::BestVOIP.Properties.Resources.BestVOIP_ExitIcon;
+            this.Exit_Button.Location = new System.Drawing.Point(412, 0);
+            this.Exit_Button.Name = "Exit_Button";
+            this.Exit_Button.Size = new System.Drawing.Size(30, 30);
+            this.Exit_Button.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Exit_Button.TabIndex = 1;
+            this.Exit_Button.TabStop = false;
+            // 
+            // panel6
+            // 
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel6.Location = new System.Drawing.Point(442, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(5, 30);
+            this.panel6.TabIndex = 0;
+            // 
             // bestVOIP_Telefonata_UserControl1
             // 
             this.bestVOIP_Telefonata_UserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.bestVOIP_Telefonata_UserControl1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.bestVOIP_Telefonata_UserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bestVOIP_Telefonata_UserControl1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bestVOIP_Telefonata_UserControl1.Location = new System.Drawing.Point(0, 0);
             this.bestVOIP_Telefonata_UserControl1.Name = "bestVOIP_Telefonata_UserControl1";
             this.bestVOIP_Telefonata_UserControl1.Size = new System.Drawing.Size(447, 595);
-            this.bestVOIP_Telefonata_UserControl1.TabIndex = 1;
+            this.bestVOIP_Telefonata_UserControl1.TabIndex = 2;
+            // 
+            // bestVOIP_Contatto_UserControl1
+            // 
+            this.bestVOIP_Contatto_UserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.bestVOIP_Contatto_UserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bestVOIP_Contatto_UserControl1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bestVOIP_Contatto_UserControl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(154)))), ((int)(((byte)(249)))));
+            this.bestVOIP_Contatto_UserControl1.Location = new System.Drawing.Point(0, 0);
+            this.bestVOIP_Contatto_UserControl1.Name = "bestVOIP_Contatto_UserControl1";
+            this.bestVOIP_Contatto_UserControl1.Size = new System.Drawing.Size(447, 595);
+            this.bestVOIP_Contatto_UserControl1.TabIndex = 1;
             // 
             // bestVOIP_Impostazioni_UserControl1
             // 
@@ -322,12 +334,12 @@ namespace BestVOIP.Forms
             this.Text = "BestVOIP";
             this.LeftMain_Panel.ResumeLayout(false);
             this.Logo_Panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.UserControl_Panel.ResumeLayout(false);
+            this.UserControlPlacerholder_Panel.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Minimize_Button)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Exit_Button)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.UserControlPlacerholder_Panel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -354,5 +366,6 @@ namespace BestVOIP.Forms
         private System.Windows.Forms.Panel UserControlPlacerholder_Panel;
         private User_Controls.BestVOIP_Impostazioni_UserControl bestVOIP_Impostazioni_UserControl1;
         private User_Controls.BestVOIP_Telefonata_UserControl bestVOIP_Telefonata_UserControl1;
+        private User_Controls.BestVOIP_Contatto_UserControl bestVOIP_Contatto_UserControl1;
     }
 }

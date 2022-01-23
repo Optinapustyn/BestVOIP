@@ -18,7 +18,7 @@ namespace BestVOIP.User_Controls
     {
         WebRequest webRequest;
 
-        string domainName, username, password, srcCidName, src;
+        string domainName, username, password, srcCidName, src, dest;
 
         SqlConnection sqlConnection = new SqlConnection(Classes.Database.databaseString);
 
@@ -49,18 +49,35 @@ namespace BestVOIP.User_Controls
 
         private void AvviaChiamata_Button_Click(object sender, EventArgs e)
         {
-            webRequest = WebRequest.Create("https://11111(DOMAIN)/app/click_to_call/click_to_call.php?username=2222(USERNAME)&password=33333(PASSWORD)!&src_cid_name=4444(VALUE CUSTOM)&src=55555(EXTENSION)&dest=666666(PASTE NUMER");
+            sqlConnection.Open();
+            SqlCommand readCommand = new SqlCommand("Select * From BestVOIP_Configuration_Table", sqlConnection);
+            SqlDataReader reader = readCommand.ExecuteReader();
+
+            while (reader.Read())
+            {
+                domainName = reader[0].ToString();
+                username = reader[1].ToString();
+                password = reader[2].ToString();
+                srcCidName = reader[3].ToString();
+                src = reader[4].ToString();
+            }
+
+            sqlConnection.Close();
+
+            dest = Dest_TextBox.Text;
+
+            webRequest = WebRequest.Create($"https://{domainName}/app/click_to_call/click_to_call.php?username={username}&password={password}!&src_cid_name={srcCidName}&src={src}&dest={dest}");
             webRequest.Method = "POST";
 
             HttpWebResponse response = (HttpWebResponse)webRequest.GetResponse();
 
             Stream dataStream = response.GetResponseStream();
-            StreamReader reader = new StreamReader(dataStream);
-            string responseFromServer = reader.ReadToEnd();
+            StreamReader streamReader = new StreamReader(dataStream);
+            string responseFromServer = streamReader.ReadToEnd();
 
             MessageBox.Show(responseFromServer);
 
-            reader.Close();
+            streamReader.Close();
             dataStream.Close();
             response.Close();
         }
